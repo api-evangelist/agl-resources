@@ -1,7 +1,11 @@
 aid: agl-resources
-url: https://raw.githubusercontent.com/api-evangelist/agl-resources/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/agl-resources/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.agl-resources.com
+description: >-
+  AGL Resources is an energy services holding company whose principal business is
+  the distribution of natural gas to residential, commercial, and industrial customers.
