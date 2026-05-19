@@ -19,6 +19,8 @@ tags:
   - Georgia
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/agl-resources
   - type: Website
     url: https://southerncompanygas.com/
   - type: Website
