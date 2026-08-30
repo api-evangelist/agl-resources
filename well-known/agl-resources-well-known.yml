@@ -1,0 +1,67 @@
+generated: '2026-08-30'
+method: probed
+source: live HTTPS probes of every host named in apis.yml (southerncompanygas.com, atlantagaslight.com) plus the parent host southerncompany.com
+note: >-
+  Every /.well-known/ path probed returned HTTP 404 on all three hosts. The
+  southerncompanygas.com origin (Adobe Experience Manager / Apache Sling behind
+  Incapsula) answers unknown paths with a real 404, not a soft-200 SPA shell, so
+  these are genuine absences rather than crawler artifacts. No WellKnown or
+  SecurityTxt pointer is emitted in apis.yml, because nothing was served.
+hosts:
+  - host: www.southerncompanygas.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: www.atlantagaslight.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: www.southerncompany.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null

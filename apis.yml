@@ -25,7 +25,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/agl-resources.png
 url: https://raw.githubusercontent.com/api-evangelist/agl-resources/refs/heads/main/apis.yml
-modified: '2026-04-19'
+created: '2026-04-19'
+modified: '2026-08-30'
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
 description: >-
   AGL Resources was an energy services holding company headquartered in Atlanta,
   Georgia, whose principal business was the distribution of natural gas to
@@ -45,18 +51,43 @@ tags:
   - Fortune 500
 apis: []
 common:
+  - type: ParentCompany
+    url: https://apis.io/providers/southern-company/
+    name: Southern Company
+    x-relationship: acquired
+    x-evidence: "In 2016, AGL Resources was acquired by Southern Company and renamed Southern Company Gas, becoming the nation's largest natural gas-only distribution company."
   - type: DomainSecurity
     url: security/agl-resources-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/agl-resources
+    x-verified: '2026-08-30'
+    x-http-status: 200
   - type: Website
-    url: https://southerncompanygas.com/
+    url: https://www.southerncompanygas.com/
+    x-verified: '2026-08-30'
+    x-http-status: 200
   - type: Website
     url: https://www.atlantagaslight.com
+    x-verified: '2026-08-30'
+    x-http-status: 200
   - type: TermsOfService
-    url: https://southerncompanygas.com/legal
+    url: https://www.southerncompany.com/terms-and-conditions.html
+    x-verified: '2026-08-30'
+    x-http-status: 200
+    x-note: >-
+      southerncompanygas.com/legal and /privacy both 404 as of 2026-08-30. The
+      southerncompanygas.com footer links its legal pages to the Southern Company
+      parent domain, which is where the live documents are served.
   - type: PrivacyPolicy
-    url: https://southerncompanygas.com/privacy
+    url: https://www.southerncompany.com/privacy-statement.html
+    x-verified: '2026-08-30'
+    x-http-status: 200
+  - type: Blog
+    url: https://www.southerncompanygas.com/news.html
+    x-verified: '2026-08-30'
+    x-http-status: 200
+  - type: LLMsTxt
+    url: llms/agl-resources-llms.txt
   - type: Features
     data:
       - name: Natural Gas Distribution
@@ -81,3 +112,33 @@ common:
         description: Third-party utility data aggregation platform enabling programmatic access to AGL/Southern Company Gas usage data with customer consent.
       - name: Southern Company Online Account
         description: Customer account portal for usage monitoring, billing, and payment management.
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    AGL Resources ceased to exist as an operating brand when Southern Company
+    acquired it in 2016 and renamed it Southern Company Gas — the legacy corporate
+    domain www.aglresources.com now redirects to www.southerncompanygas.com, and
+    that successor site is a consumer/corporate information site whose full sitemap
+    contains no developer, API or documentation section, with /developers returning
+    404 and every /.well-known/ path on southerncompanygas.com, atlantagaslight.com
+    and the parent southerncompany.com returning 404.
+  evidence:
+    - url: https://www.aglresources.com/
+      status: 200
+    - url: https://www.southerncompanygas.com/developers
+      status: 404
+    - url: https://www.southerncompanygas.com/.well-known/api-catalog
+      status: 404
+    - url: https://www.southerncompanygas.com/openapi.json
+      status: 404
+    - url: https://www.atlantagaslight.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.southerncompanygas.com/sitemap.xml
+      status: 200
+  checked: '2026-08-30'

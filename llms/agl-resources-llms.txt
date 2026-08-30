@@ -1,0 +1,41 @@
+# AGL Resources (now Southern Company Gas)
+
+> AGL Resources was an energy services holding company headquartered in Atlanta, Georgia, whose principal business was the distribution of natural gas to residential, commercial, and industrial customers. In 2016 it was acquired by Southern Company and renamed Southern Company Gas, becoming the largest natural-gas-only distribution company in the United States. AGL Resources no longer exists as an operating brand.
+
+## Status
+
+- **AGL Resources publishes no public API.** No developer portal, no OpenAPI/AsyncAPI/GraphQL contract, no SDKs, no MCP server and no A2A agent card were found on any host associated with the company (checked 2026-08-30).
+- The legacy corporate domain `www.aglresources.com` redirects to `https://www.southerncompanygas.com/` (HTTP 200 after redirect). The successor site is a corporate/consumer information site with no developer area.
+- Every `/.well-known/` path probed on `southerncompanygas.com`, `atlantagaslight.com` and the parent `southerncompany.com` returned HTTP 404. See `well-known/agl-resources-well-known.yml`.
+- Programmatic access to natural gas usage data for these service territories, where it exists at all, is brokered by third-party utility data aggregators with customer consent — not by a first-party AGL / Southern Company Gas API.
+
+## Company
+
+- Website (successor): https://www.southerncompanygas.com/
+- Atlanta Gas Light (principal subsidiary): https://www.atlantagaslight.com/
+- Who We Are: https://www.southerncompanygas.com/who-we-are.html
+- News: https://www.southerncompanygas.com/news.html
+- Terms and Conditions (Southern Company): https://www.southerncompany.com/terms-and-conditions.html
+- Privacy Statement (Southern Company): https://www.southerncompany.com/privacy-statement.html
+- LinkedIn: https://www.linkedin.com/company/agl-resources
+
+## Parent
+
+- Southern Company — acquired AGL Resources in 2016; the business now trades as Southern Company Gas: https://apis.io/providers/southern-company/
+
+## Operating utilities under the brand
+
+- Atlanta Gas Light (Georgia)
+- Nicor Gas (Illinois)
+- Virginia Natural Gas (Virginia)
+- Chattanooga Gas (Tennessee)
+
+## What is in this profile
+
+- `security/agl-resources-domain-security.yml` — probed TLS / HSTS / DNSSEC / CAA / SPF / DMARC posture for southerncompanygas.com and atlantagaslight.com
+- `well-known/agl-resources-well-known.yml` — recorded absence of every `/.well-known/` document
+- `blogs/`, `press/`, `search/` — harvested coverage of the company and the Southern Company merger
+
+## Notes for agents
+
+There is no callable AGL Resources endpoint. Do not construct one. Any API surface attributed to "AGL" that resolves to `agl.com.au` belongs to **AGL Energy Limited** of Australia — a different, unrelated company profiled separately.
