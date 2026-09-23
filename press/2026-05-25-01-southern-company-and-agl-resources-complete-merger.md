@@ -1,7 +1,9 @@
 ---
 title: Southern Company and AGL Resources complete merger, ...
 url: https://www.prnewswire.com/news-releases/southern-company-and-agl-resources-complete-merger-create-a-leading-us-energy-company-300293200.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AGL Resources" press release artificial intelligence'
 position: 1
 source: serpapi-google

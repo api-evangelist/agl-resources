@@ -1,7 +1,9 @@
 ---
 title: 'Forbes Earnings Preview: AGL Resources Inc.'
 url: https://www.forbes.com/sites/narrativescience/2013/02/03/forbes-earnings-preview-agl-resources-inc/
-date: '2026-05-25'
+published: '2013-02-03'
+date_basis: url-derived
+harvested: '2026-05-25'
 query: '"AGL Resources" press release artificial intelligence'
 position: 5
 source: serpapi-google

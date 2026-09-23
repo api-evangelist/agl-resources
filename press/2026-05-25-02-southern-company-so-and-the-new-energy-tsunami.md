@@ -1,7 +1,9 @@
 ---
 title: Southern Company (SO) and the New Energy Tsunami
 url: https://markets.financialcontent.com/stocks/article/finterra-2026-2-19-the-ai-utility-southern-company-so-and-the-new-energy-tsunami
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AGL Resources" press release artificial intelligence'
 position: 2
 source: serpapi-google
