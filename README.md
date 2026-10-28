@@ -1,4 +1,4 @@
-# AGL Resources (agl-resources)
+# AGL Resources
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,44 +66,80 @@
 
 AGL Resources was an energy services holding company headquartered in Atlanta, Georgia, whose principal business was the distribution of natural gas to residential, commercial, and industrial customers. In 2016, AGL Resources was acquired by Southern Company and renamed Southern Company Gas, becoming the nation's largest natural gas-only distribution company. The company distributes natural gas through subsidiaries including Atlanta Gas Light, Chattanooga Gas, Nicor Gas, and Virginia Natural Gas. AGL Resources / Southern Company Gas does not offer a public developer API; utility data access is available through third-party data aggregators and community-built integrations.
 
-**URL:** [https://southerncompanygas.com/](https://southerncompanygas.com/)
+**Areas:** Energy · Natural Gas · Utilities · Energy Distribution · Georgia · Fortune 500
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## AGL Resources on APIs.io
 
-## Tags:
+Everything profiled for AGL Resources is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agl-resources/](https://apis.io/providers/agl-resources/)** — or go straight to one of the APIs or properties below.
 
- - Energy, Natural Gas, Utilities, Energy Distribution, Georgia
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2026-03-23
-- **Modified:** 2026-04-19
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Southern Company Gas Website](https://southerncompanygas.com/)
-- [Atlanta Gas Light Website](https://www.atlantagaslight.com)
+- [Agl Resources Domain Security](https://apis.io/security/agl-resources/agl-resources-domain-security/)
 
-## Features
+## Where to find this API
 
-| Name | Description |
-|------|-------------|
-| Natural Gas Distribution | Distribution of natural gas to over 1.6 million residential, commercial, and industrial customers in Georgia and other states. |
-| Energy Marketing Services | Competitive retail natural gas services through brands including SouthStar Energy Services and Georgia Natural Gas. |
-| Pipeline Infrastructure | Midstream pipeline investments and operations supporting natural gas transport and delivery. |
-| Sustainability Programs | Clean energy initiatives and net-zero goals including hydrogen blending and renewable natural gas programs. |
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Use Cases
+- [Website](https://www.southerncompanygas.com/)
+- [Blog](https://www.southerncompanygas.com/news.html)
+- [Terms of service](https://www.southerncompany.com/terms-and-conditions.html)
+- [Privacy policy](https://www.southerncompany.com/privacy-statement.html)
 
-| Name | Description |
-|------|-------------|
-| Residential Energy Management | Customers manage natural gas accounts, usage, and billing through online portals and mobile apps. |
-| Commercial and Industrial Supply | Large commercial and industrial customers access competitive natural gas supply and usage reporting. |
-| Third-Party Data Aggregation | Utility data aggregators (such as UtilityAPI) can provide programmatic access to usage data with customer consent. |
+## API Evangelist rating
 
-## Integrations
+**Kin Score 10.0** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-| Name | Description |
-|------|-------------|
-| UtilityAPI | Third-party utility data aggregation platform enabling programmatic access to AGL/Southern Company Gas usage data with customer consent. |
-| Southern Company Online Account | Customer account portal for usage monitoring, billing, and payment management. |
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agl-resources/](https://apis.io/providers/agl-resources/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AGL Resources: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agl-resources/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
